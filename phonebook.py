@@ -24,4 +24,8 @@ if selected_option == "2":
     print(phonebook)
     print("contact added successfully")
     print(menu)
+elif selected_option == "1":
+    name = input("what contact's number would you like?")
+    print(phonebook[name])
+    print(menu)
     
