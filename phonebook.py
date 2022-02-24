@@ -1,3 +1,4 @@
+hasQuit = False
 phonebook = {}
 
 menu = """
@@ -12,6 +13,7 @@ menu = """
 
 """
 
+while not(hasQuit):
 print(menu) 
 
 selected_option = input("What do you want to do (1-5)?")
@@ -23,9 +25,8 @@ if selected_option == "2":
 
     print(phonebook)
     print("contact added successfully")
-    print(menu)
 elif selected_option == "1":
     name = input("what contact's number would you like?")
-    print(phonebook[name])
-    print(menu)
-    
+    print("Here's their number: ", phonebook[name])
+elif selected_option == "5":
+    hasQuit = True 
